@@ -14,4 +14,6 @@ fn main() {
     let z = &mut x;
     *z += 1000;
     assert_eq!(x, 1200);
+
+    println!("{}", x);
 }

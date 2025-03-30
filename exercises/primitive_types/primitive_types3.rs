@@ -14,4 +14,5 @@ fn main() {
     } else {
         println!("Meh, I eat arrays like that for breakfast.");
     }
+    println!("{}",a[10]);
 }
