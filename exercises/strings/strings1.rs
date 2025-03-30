@@ -14,5 +14,4 @@ fn main() {
 fn current_favorite_color() -> String {
   let greeting = String::from("blue");
   return greeting
-
 }
