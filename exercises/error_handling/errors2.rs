@@ -25,7 +25,7 @@ use std::num::ParseIntError;
 pub fn total_cost(item_quantity: &str) -> Result<i32, ParseIntError> {
     let processing_fee = 1;
     let cost_per_item = 5;
-    let qty = item_quantity.parse::<i32>()?;
+    let qty = item_quantity.parse::<i32>()?;  // 而问号则是如果到了Err则返回一个Err，如果Ok则取出Ok其中的内容。所以这里只能用?
 
     Ok(qty * cost_per_item + processing_fee)
 }
