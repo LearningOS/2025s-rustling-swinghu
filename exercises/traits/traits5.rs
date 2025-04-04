@@ -6,7 +6,7 @@
 //
 // Execute `rustlings hint traits5` or use the `hint` watch subcommand for a
 // hint.
-
+// 如何将普通类型，改为generics 类
 
 pub trait SomeTrait {
     fn some_function(&self) -> bool {
