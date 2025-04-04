@@ -8,7 +8,7 @@
 
 mod macros {
 
-    #[macro_export]  //到处宏定义
+    #[macro_export]  //导出宏定义
     macro_rules! my_macro {
         () => {
             println!("Check out my macro!");
