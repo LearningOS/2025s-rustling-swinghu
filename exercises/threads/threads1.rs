@@ -8,9 +8,8 @@
 // Execute `rustlings hint threads1` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
 
-use std::thread;
+use std::{result, thread};
 use std::time::{Duration, Instant};
 
 fn main() {
@@ -25,8 +24,17 @@ fn main() {
     }
 
     let mut results: Vec<u128> = vec![];
-    for handle in handles {
+    for handle in handles{
         // TODO: a struct is returned from thread::spawn, can you use it?
+        let m = handle.join().unwrap();
+        results.push(m);  // 为什么这不能用 append
+        //
+        // ‌Explanation:‌
+
+        //    ‌append vs. push:‌
+        //   append is used to merge ‌another vector‌ into the current one (consuming the other vector).
+        //   push adds a ‌single element‌ to the end of the vector.
+        //
     }
 
     if results.len() != 10 {

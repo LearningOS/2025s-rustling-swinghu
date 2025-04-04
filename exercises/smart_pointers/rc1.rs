@@ -1,3 +1,4 @@
+
 // rc1.rs
 //
 // In this exercise, we want to express the concept of multiple owners via the
