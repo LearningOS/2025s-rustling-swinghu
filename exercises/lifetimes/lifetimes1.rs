@@ -8,9 +8,9 @@
 // Execute `rustlings hint lifetimes1` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
 
-fn longest(x: &str, y: &str) -> &str {
+// - **隐式生命周期的限制**：当函数有多个输入引用且返回引用时，Rust 需要显式标注生命周期以明确关系。
+fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
     if x.len() > y.len() {
         x
     } else {
